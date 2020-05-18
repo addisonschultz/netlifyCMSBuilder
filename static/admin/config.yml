@@ -22,7 +22,7 @@ collections:
     create: true
     format: json-frontmatter
     extension: json
-    slug: "{{labelName}}"
+    slug: "{{labelInfo.labelName}}"
     fields:
       - name: labelInfo
         label: Label Info
@@ -72,11 +72,10 @@ collections:
                   name: "productImage",
                   label: "Product Image",
                   widget: "image",
-                  default: "placeholder.png",
                 }
           - name: inventory
             label: Inventory
-            label_singular: item
+            label_singular: inventory
             widget: "list"
             fields:
               - { name: size, label: Size, widget: "string" }
