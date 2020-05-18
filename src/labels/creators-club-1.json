@@ -1,0 +1,47 @@
+{
+"labelInfo": {
+    "labelAddress": "Koninginneweg 56-4",
+    "labelPhone": "+31657811633",
+    "labelImage": "japan_001.jpg",
+    "labelDescription": "A description",
+    "labelEmail": "addisonschultz0@gmail.com"
+  },
+  "products": [
+    {
+      "color": [
+        "black"
+      ],
+      "sex": "m",
+      "productImages": [
+        {
+          "productImage": "japan_002.jpg"
+        }
+      ],
+      "price": 300,
+      "productDescription": "Product Description",
+      "optionalInfo": {
+        "material": "Material",
+        "fit": "Fit",
+        "care": "Care",
+        "production": "Production",
+        "sku": "SKU-001",
+        "additionalNotes": "Additional Notes"
+      },
+      "shipping": 0,
+      "productName": "Block Tee",
+      "inventory": [
+        {
+          "size": "Medium",
+          "quantity": 3
+        }
+      ],
+      "sustainable": [
+        "fair-trade"
+      ],
+      "category": [
+        "shorts"
+      ]
+    }
+  ],
+  "labelName": "Creators Club"
+}
