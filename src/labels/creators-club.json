@@ -1,0 +1,48 @@
+{
+"labelInfo": {
+    "labelAddress": "Koninginneweg 56-4",
+    "labelPhone": "+31657811633",
+    "labelImage": "japan_001.jpg",
+    "labelName": "Creators Club",
+    "labelDescription": "A description for Creators Club",
+    "labelEmail": "addisonschultz0@gmail.com"
+  },
+  "products": [
+    {
+      "color": [
+        "black"
+      ],
+      "sex": "w",
+      "productImages": [
+        {
+          "productImage": "japan_002.jpg"
+        }
+      ],
+      "price": 200.45,
+      "productDescription": "A description for a Creators Club's Block Tee",
+      "optionalInfo": {
+        "material": "Material",
+        "fit": "Fit",
+        "care": "Care",
+        "production": "Production",
+        "sku": "SKU-001",
+        "additionalNotes": "More Notes"
+      },
+      "shipping": 0,
+      "productName": "Block Tee",
+      "inventory": [
+        {
+          "size": "Medium",
+          "quantity": 2
+        }
+      ],
+      "sustainable": [
+        "locally-made",
+        "vegan"
+      ],
+      "category": [
+        "tee"
+      ]
+    }
+  ]
+}
