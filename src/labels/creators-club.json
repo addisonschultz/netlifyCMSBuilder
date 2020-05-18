@@ -1,5 +1,5 @@
 {
-"labelInfo": {
+  "labelInfo": {
     "labelAddress": "Koninginneweg 56-4",
     "labelPhone": "+31657811633",
     "labelImage": "japan_001.jpg",
@@ -9,9 +9,7 @@
   },
   "products": [
     {
-      "color": [
-        "black"
-      ],
+      "color": ["black"],
       "sex": "w",
       "productImages": [
         {
@@ -36,13 +34,8 @@
           "quantity": 2
         }
       ],
-      "sustainable": [
-        "locally-made",
-        "vegan"
-      ],
-      "category": [
-        "tee"
-      ]
+      "sustainable": ["locally-made", "vegan"],
+      "category": ["tee"]
     }
   ]
 }

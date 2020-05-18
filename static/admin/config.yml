@@ -24,14 +24,14 @@ collections:
       preview: false
     format: json-frontmatter
     extension: json
-    slug: "{{labelInfo.labelName}}"
+    slug: "{{labelName}}"
     fields:
+      - { name: labelName, label: Label Name, widget: "string" }
       - name: labelInfo
         label: Label Info
         widget: object
         collapsed: true
         fields:
-          - { name: labelName, label: Label Name, widget: "string" }
           - { name: labelDescription, label: Label Description, widget: "text" }
           - { name: labelEmail, label: Label Email, widget: "string" }
           - {
@@ -112,7 +112,7 @@ collections:
               step: 0.01,
               valueType: "float",
               default: 0,
-              hint: "If you have shipping costs, add them here. Otherwise leave this field at 0",
+              hint: "If you have shipping costs, add them here. Otherwise leave this field at 0.",
             }
           - {
               name: color,
