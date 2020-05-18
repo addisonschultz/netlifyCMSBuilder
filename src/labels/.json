@@ -1,0 +1,59 @@
+{
+"labelAddress": "Konininneweg 56-4",
+  "labelPhone": "123456789",
+  "labelImage": "japan_002.jpg",
+  "products": [
+    {
+      "color": [
+        "black",
+        "grey"
+      ],
+      "sex": "m",
+      "productImages": [
+        {
+          "productImage": "japan_006.jpg"
+        },
+        {
+          "productImage": "japan_photography_82.jpg"
+        }
+      ],
+      "material": "Material",
+      "price": 50,
+      "productDescription": "Description",
+      "shipping": 0,
+      "fit": "Fit",
+      "care": "Care",
+      "production": "Production",
+      "productName": "Block Tee",
+      "additionalNotes": "Additional Notes",
+      "inventory": [
+        {
+          "size": "Medium",
+          "quantity": 3
+        },
+        {
+          "size": "Large",
+          "quantity": 2
+        },
+        {
+          "size": "32 X 32",
+          "quantity": 7
+        },
+        {
+          "size": "One Size",
+          "quantity": 3
+        }
+      ],
+      "sku": "SKU-001",
+      "sustainable": [
+        "vegan"
+      ],
+      "category": [
+        "skirt"
+      ]
+    }
+  ],
+  "labelName": "Creators Club",
+  "labelDescription": "Description",
+  "labelEmail": "addisonschultz0@gmail.com"
+}
