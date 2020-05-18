@@ -20,6 +20,8 @@ collections:
     label_singular: "Label"
     folder: src/labels
     create: true
+    editor:
+      preview: false
     format: json-frontmatter
     extension: json
     slug: "{{labelInfo.labelName}}"
@@ -78,7 +80,12 @@ collections:
             label_singular: inventory
             widget: "list"
             fields:
-              - { name: size, label: Size, widget: "string" }
+              - {
+                  name: size,
+                  label: Size,
+                  widget: "string",
+                  hint: "This will appear on the site, so use full words like Medium, Extra Large, 32 X 32, One Size, etc.",
+                }
               - { name: quantity, label: Quantity, widget: "number", step: 1 }
           - {
               name: sex,
@@ -104,8 +111,8 @@ collections:
               widget: "number",
               step: 0.01,
               valueType: "float",
-              required: false,
               default: 0,
+              hint: "If you have shipping costs, add them here. Otherwise leave this field at 0",
             }
           - {
               name: color,
@@ -174,45 +181,50 @@ collections:
                 ],
               multiple: true,
             }
-          - {
-              name: material,
-              label: Material,
-              widget: "text",
-              required: false,
-              default: "",
-            }
-          - {
-              name: fit,
-              label: Fit,
-              widget: "text",
-              required: false,
-              default: "",
-            }
-          - {
-              name: care,
-              label: Care,
-              widget: "text",
-              required: false,
-              default: "",
-            }
-          - {
-              name: production,
-              label: Production,
-              widget: "text",
-              required: false,
-              default: "",
-            }
-          - {
-              name: sku,
-              label: SKU,
-              required: false,
-              widget: "string",
-              default: "",
-            }
-          - {
-              name: additionalNotes,
-              label: Additional Notes,
-              widget: "text",
-              required: false,
-              default: "",
-            }
+          - name: optionalInfo
+            label: Optional Info
+            widget: object
+            collapsed: true
+            fields:
+              - {
+                  name: material,
+                  label: Material,
+                  widget: "text",
+                  required: false,
+                  default: "",
+                }
+              - {
+                  name: fit,
+                  label: Fit,
+                  widget: "text",
+                  required: false,
+                  default: "",
+                }
+              - {
+                  name: care,
+                  label: Care,
+                  widget: "text",
+                  required: false,
+                  default: "",
+                }
+              - {
+                  name: production,
+                  label: Production,
+                  widget: "text",
+                  required: false,
+                  default: "",
+                }
+              - {
+                  name: sku,
+                  label: SKU,
+                  required: false,
+                  widget: "string",
+                  default: "",
+                }
+              - {
+                  name: additionalNotes,
+                  label: Additional Notes,
+                  widget: "text",
+                  required: false,
+                  default: "",
+                }
