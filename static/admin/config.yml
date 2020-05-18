@@ -22,24 +22,198 @@ collections:
     create: true
     format: json-frontmatter
     extension: json
-    slug: "{{artistName}}"
+    slug: "{{labelName}}"
     fields:
-      - { name: artistName, label: Artist Name, widget: "string" }
-      - { name: image, label: Image, widget: "image" }
-      - { name: bio, label: Bio, widget: "text" }
-      - name: releases
-        label: Releases
-        label_singular: release
+      - name: labelInfo
+        label: Label Info
+        widget: object
+        collapsed: true
+        fields:
+          - { name: labelName, label: Label Name, widget: "string" }
+          - { name: labelDescription, label: Label Description, widget: "text" }
+          - { name: labelEmail, label: Label Email, widget: "string" }
+          - {
+              name: labelAddress,
+              label: Label Address,
+              widget: "string",
+              required: false,
+              default: "",
+            }
+          - {
+              name: labelPhone,
+              label: Label Phone,
+              widget: "string",
+              required: false,
+              default: "",
+            }
+          - {
+              name: labelImage,
+              label: Label Image,
+              widget: "image",
+              default: "placeholder.png",
+            }
+      - name: products
+        label: Products
+        label_singular: product
         widget: "list"
         fields:
-          - { name: releaseName, label: Name, widget: "string" }
+          - { name: productName, label: Product Name, widget: "string" }
           - {
-              name: releaseDate,
-              label: Release Date,
-              widget: "datetime",
-              dateFormat: "DD.MM.YYYY",
-              format: "DD.MM.YYYY",
-              timeFormat: false,
+              name: productDescription,
+              label: Product Description,
+              widget: "text",
             }
-          - { name: link, label: Link, widget: "string" }
-          - { name: image, label: Image, widget: "image" }
+          - name: productImages
+            label: "Product Images"
+            label_singular: Product Image
+            widget: "list"
+            fields:
+              - {
+                  name: "productImage",
+                  label: "Product Image",
+                  widget: "image",
+                  default: "placeholder.png",
+                }
+          - name: inventory
+            label: Inventory
+            label_singular: item
+            widget: "list"
+            fields:
+              - { name: size, label: Size, widget: "string" }
+              - { name: quantity, label: Quantity, widget: "number", step: 1 }
+          - {
+              name: sex,
+              label: Sex,
+              widget: "select",
+              options:
+                [
+                  { label: "Men", value: "m" },
+                  { label: "Women", value: "w" },
+                  { label: "Unisex", value: "u" },
+                ],
+            }
+          - {
+              name: price,
+              label: Price,
+              widget: "number",
+              step: 0.01,
+              valueType: "float",
+            }
+          - {
+              name: shipping,
+              label: Shipping,
+              widget: "number",
+              step: 0.01,
+              valueType: "float",
+              required: false,
+              default: 0,
+            }
+          - {
+              name: color,
+              label: Color,
+              widget: "select",
+              options:
+                [
+                  "beige",
+                  "black",
+                  "blue",
+                  "brown",
+                  "gold",
+                  "green",
+                  "grey",
+                  "multi",
+                  "orange",
+                  "pink",
+                  "purple",
+                  "red",
+                  "silver",
+                  "white",
+                  "yellow",
+                ],
+              multiple: true,
+            }
+          - {
+              name: sustainable,
+              label: Sustainable,
+              widget: "select",
+              options:
+                [
+                  "eco-friendly",
+                  "fair-trade",
+                  "locally-made",
+                  "social",
+                  "vegan",
+                ],
+              multiple: true,
+            }
+          - {
+              name: category,
+              label: Category,
+              widget: "select",
+              options:
+                [
+                  "activewear",
+                  "bag",
+                  "belt",
+                  "blouse",
+                  "coat",
+                  "dress",
+                  "dungarees",
+                  "hat",
+                  "jacket",
+                  "jewelry",
+                  "joggers",
+                  "jumpsuit",
+                  "kimono",
+                  "pants",
+                  "shoes",
+                  "shorts",
+                  "skirt",
+                  "sweatshirt",
+                  "tee",
+                  "other",
+                ],
+              multiple: true,
+            }
+          - {
+              name: material,
+              label: Material,
+              widget: "text",
+              required: false,
+              default: "",
+            }
+          - {
+              name: fit,
+              label: Fit,
+              widget: "text",
+              required: false,
+              default: "",
+            }
+          - {
+              name: care,
+              label: Care,
+              widget: "text",
+              required: false,
+              default: "",
+            }
+          - {
+              name: production,
+              label: Production,
+              widget: "text",
+              required: false,
+              default: "",
+            }
+          - {
+              name: sku,
+              label: SKU,
+              required: false,
+              widget: "string",
+              default: "",
+            }
+          - {
+              name: additionalNotes,
+              label: Additional Notes,
+              widget: "text",
+              required: false,
+              default: "",
+            }
