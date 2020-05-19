@@ -1,0 +1,57 @@
+{
+"labelInfo": {
+    "labelAddress": "",
+    "labelPhone": "",
+    "labelImage": "japan_002.jpg",
+    "labelDescription": "Based in Amsterdam, BiBS is a fashion label founded in 2019 which specializes in dungarees.\n\nInfluenced by the practicality of functional wear and urban aesthetics, we strive to design garments that enable, empower and stimulate creativity. Sparking confidence to create, supporting creatives through functional garments and adapting to our ever changing world remains at the core of our brand.\n\nOur brand name \"BiBS\" finds its origin from other terms which also means \"dungaree\" such as \"bib-and-brace\" and \"bib overall\".",
+    "labelEmail": "info@bibs.com"
+  },
+  "products": [
+    {
+      "color": [
+        "black"
+      ],
+      "sex": "u",
+      "productImages": [
+        {
+          "productImage": "japan_002.jpg"
+        }
+      ],
+      "price": 159,
+      "productDescription": "The Original BiBS are handmade in the Netherlands, hence every piece is unique meant to support creatives on a daily basis.",
+      "optionalInfo": {
+        "material": "",
+        "fit": "A soft cotton twill fabric and oversized fit ensures a comfy feel and provides room for extra layers. You can safely store and access items such as your phone, valuables or tools in the zipped chest pocket and hammer loop. However, be creative and make use in your own needs! The adjustable straps are there to adjust the size accordingly.",
+        "care": "",
+        "production": "The Original BiBS are handmade in the Netherlands, hence every piece is unique meant to support creatives on a daily basis.",
+        "sku": "",
+        "additionalNotes": "The Original BiBS is about combining comfort and subtlety with a touch of functionality. Logo marks are embroidered on the back of the zipped chest pocket as well as lasered on all buttons."
+      },
+      "shipping": 3.95,
+      "productName": "BiBS Dungaree Unisex Black",
+      "inventory": [
+        {
+          "size": "Small",
+          "quantity": 0
+        },
+        {
+          "size": "Medium",
+          "quantity": 2
+        },
+        {
+          "size": "Large",
+          "quantity": 2
+        }
+      ],
+      "sustainable": [
+        "eco-friendly",
+        "locally-made",
+        "fair-trade"
+      ],
+      "category": [
+        "dungarees"
+      ]
+    }
+  ],
+  "labelName": "BiBS label"
+}
